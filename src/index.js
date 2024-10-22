@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './output.css'; // Adjust the path based on where your CSS file is located
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
