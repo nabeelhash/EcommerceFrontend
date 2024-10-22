@@ -70,7 +70,7 @@ const Navbar = () => {
               <Link to="/update-password"><li className='text-md px-2'>Update Password</li></Link>
 
             </ul>
-          </div> : ''}
+          </div> : null}
           {auth && auth.user ? (
             <button className='bg-gradient-to-r from-purple-700 to-blue-600 rounded px-4 py-2 transform transition-transform duration-200 hover:scale-110 hover:bg-blue-700' onClick={handle}>Logout</button>
           ) : (
