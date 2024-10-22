@@ -24,7 +24,7 @@ const SingleProduct = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch(`http://localhost:4000/singleproduct/${id}`, {
+                const response = await fetch(`https://ecommerce-backend-pi-neon.vercel.app/singleproduct/${id}`, {
                     method: 'GET',
                     credentials: 'include'
                 })
@@ -54,7 +54,7 @@ const SingleProduct = () => {
 
     const addReview = async function () {
         try {
-            const response = await fetch(`http://localhost:4000/review/${id}`, {
+            const response = await fetch(`https://ecommerce-backend-pi-neon.vercel.app/review/${id}`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {

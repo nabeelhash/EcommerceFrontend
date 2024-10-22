@@ -30,28 +30,28 @@ const App = () => {
         <AuthProvider>
             <CartProvider>
                 <SearchProvider>
-                <BrowserRouter>
-                    <Toaster />
-                    <Routes>
-                        <Route path='/' element={<Home />}></Route>
-                        <Route path='/admin' element={<AdminPage />}></Route>
-                        <Route path='/profile' element={<Profile />}></Route>
-                        <Route path='/login' element={<Login />}></Route>
-                        <Route path='/register' element={<Register />}></Route>
-                        <Route path='/update-password' element={<UpdatePassword />}></Route>
-                        <Route path='/forget-password' element={<ForgetPassword />}></Route>
-                        <Route path='/otp' element={<Otp />}></Route>
-                        <Route path='/user' element={<UserInfo />}></Route>
-                        <Route path='/single/:id' element={<Single />}></Route>
-                        <Route path='/createproduct' element={<CreateProduct />}></Route>
-                        <Route path='/category' element={<Category />}></Route>
-                        <Route path='/allproducts' element={<AllProducts />}></Route>
-                        <Route path='/singleProduct/:id' element={<SingleProduct />}></Route>
-                        <Route path='/updateProduct/:id' element={<UpdateProduct />}></Route>
-                        <Route path='/cart' element={<Cart />}></Route>
+                    <BrowserRouter>
+                        <Toaster />
+                        <Routes>
+                            <Route path='/' element={<Home />}></Route>
+                            <Route path='/admin' element={<AdminPage />}></Route>
+                            <Route path='/profile' element={<Profile />}></Route>
+                            <Route path='/login' element={<Login />}></Route>
+                            <Route path='/register' element={<Register />}></Route>
+                            <Route path='/update-password' element={<UpdatePassword />}></Route>
+                            <Route path='/forget-password' element={<ForgetPassword />}></Route>
+                            <Route path='/otp' element={<Otp />}></Route>
+                            <Route path='/user' element={<UserInfo />}></Route>
+                            <Route path='/single/:id' element={<Single />}></Route>
+                            <Route path='/createproduct' element={<CreateProduct />}></Route>
+                            <Route path='/category' element={<Category />}></Route>
+                            <Route path='/allproducts' element={<AllProducts />}></Route>
+                            <Route path='/singleProduct/:id' element={<SingleProduct />}></Route>
+                            <Route path='/updateProduct/:id' element={<UpdateProduct />}></Route>
+                            <Route path='/cart' element={<Cart />}></Route>
 
-                    </Routes>
-                </BrowserRouter>
+                        </Routes>
+                    </BrowserRouter>
                 </SearchProvider>
             </CartProvider>
         </AuthProvider>

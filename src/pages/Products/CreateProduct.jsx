@@ -20,7 +20,7 @@ const CreateProduct = () => {
         const fetchData = async function () {
             try {
                 console.log('click')
-                let response = await fetch('http://localhost:4000/categoryAll', {
+                let response = await fetch('https://ecommerce-backend-pi-neon.vercel.app/categoryAll', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'
@@ -52,7 +52,7 @@ console.log('sa')
 
         try {
             console.log('click')
-            let response = await fetch('http://localhost:4000/createProduct', {
+            let response = await fetch('https://ecommerce-backend-pi-neon.vercel.app/createProduct', {
                 method: 'POST',
                 credentials: 'include',
                 body: formData

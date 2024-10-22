@@ -22,7 +22,7 @@ const UpdateBlog = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch(`http://localhost:4000/singleproduct/${id}`, {
+                const response = await fetch(`https://ecommerce-backend-pi-neon.vercel.app/singleproduct/${id}`, {
                     method: 'GET',
                     credentials: 'include'
                 })
@@ -51,7 +51,7 @@ const UpdateBlog = () => {
         const fetchData = async function () {
             try {
                 console.log('click')
-                let response = await fetch('http://localhost:4000/categoryAll', {
+                let response = await fetch('https://ecommerce-backend-pi-neon.vercel.app/categoryAll', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'
@@ -82,7 +82,7 @@ const UpdateBlog = () => {
             formData.append('category', selectedCategory);
             formData.append('stock', stock);
 
-            const response = await fetch(`http://localhost:4000/updateProduct/${id}`, {
+            const response = await fetch(`https://ecommerce-backend-pi-neon.vercel.app/updateProduct/${id}`, {
                 method: 'PATCH',
                 credentials: 'include',
                 body: formData

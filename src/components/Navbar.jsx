@@ -25,7 +25,7 @@ const Navbar = () => {
     console.log('click')
     try {
       e.preventDefault();
-      const response = await fetch('http://localhost:4000/logout', {
+      const response = await fetch('https://ecommerce-backend-pi-neon.vercel.app/logout', {
         method: "GET",
         headers: { "Content-Type": "application/json" },
         credentials: 'include'
