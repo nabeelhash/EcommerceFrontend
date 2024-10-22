@@ -33,9 +33,9 @@ const Cart = () => {
     return (
         <div>
             <Navbar />
-            <div className='py-20 w-[80%] m-auto flex'>
+            <div className='py-20 w-[80%] m-auto flex flex-wrap'>
                 {cart.length > 0 ?
-                    <table class="table w-[70%]">
+                    <table class="table w-[100%] md:w-[70%]">
                         <thead>
                             <tr>
                                 <th scope="col">Image</th>
@@ -59,7 +59,7 @@ const Cart = () => {
                     : (
                         <p className='w-[70%]'>No products found</p>)}
 
-                <div className='border-1 border-gray-300 w-[30%] p-5 '>
+                <div className='border-1 h-fit border-gray-300 w-[100%] md:w-[30%] px-4 py-5'>
                     <p className='text-3xl font-semibold mb-4'>Cart Total</p>
                     <div className='flex items-center justify-between my-1'>
                         <h1 className='text-lg font-medium '>SubTotal</h1>
