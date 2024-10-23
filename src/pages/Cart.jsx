@@ -45,7 +45,7 @@ const Cart = () => {
                         <tbody>
                             {cart.map(cart => (
                                 <tr key={cart._id}>
-                                    <td className='w-[40%] '><img className='w-[80%] my-2 border-2' src={`http://localhost:4000/${cart.image}`}></img></td>
+                                    <td className='w-[40%] '><img className='w-[80%] my-2 border-2' src={`${cart.image}`}></img></td>
                                     <td className='w-[50%] items-center'>
                                         <h1 className='text-2xl font-semibold'>{cart.name}</h1>
                                         <h1 className='text-lg'>{truncateText(cart.des, 20)}</h1>

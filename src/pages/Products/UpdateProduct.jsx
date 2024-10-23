@@ -138,7 +138,7 @@ console.log(selectedCategory)
                         onChange={function (e) { setStock(e.target.value) }} aria-describedby="emailHelp" />
                 </div>
                 <input type='file' accept='image/*' onChange={function (e) { setFile(e.target.files[0]) }}></input>
-                <img className='mb-3 w-[50%]' src={`http://localhost:4000/${img}`}></img>
+                <img className='mb-3 w-[50%]' src={`${img}`}></img>
 
                 <button className='text-white bg-black rounded px-4 py-2 transform transition-transform duration-200 hover:scale-110 hover:bg-blue-700' onClick={handleSubmit}>Update Blog</button>
 

@@ -102,7 +102,7 @@ const AllBlogs = () => {
                 <div class="card w-[80%] flex flex-row flex-wrap justify-center gap-3 items-center py-20" >
                     {filter.map(product => (
                         <div key={product._id} className='w-[60%] md:w-[40%] lg:w-[23%] mb-5 border-1 border-gray-200'>
-                            <Link to={`/singleProduct/${product._id}`}><img className='w-[100%]' src={`https://ecommerce-backend-pi-neon.vercel.app/${product.image}`} /></Link>
+                            <Link to={`/singleProduct/${product._id}`}><img className='w-[100%]' src={`${product.image}`} /></Link>
                             <div class="card-body">
                                 <div className='flex justify-between'>
                                     <h5 class="text-3xl font-semibold ">{product.name}</h5>
